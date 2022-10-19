@@ -94,7 +94,7 @@ services:
               source: ./proxy/proxy.conf
               target: '${PROXY_PREFIX}/proxy.conf'
             - type: bind
-              source: ./proxy/fatscgi.conf
+              source: ./proxy/fastcgi.conf
               target: '${PROXY_PREFIX}/fastcgi.conf'
             - type: bind
               source: ./proxy/mime.types
