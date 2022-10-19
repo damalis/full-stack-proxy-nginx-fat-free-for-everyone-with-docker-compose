@@ -251,7 +251,7 @@ if [ -x "$(command -v docker)" ] && [ -x "$(command -v docker-compose)" ]; then
 			done			
 			echo ""
 			echo "Reloading proxy ssl configuration"
-			docker exec proxy nginx -s reload > /dev/null 2>&1
+			docker container restart proxy > /dev/null 2>&1
 			echo "Ok."
 			echo ""
 			echo "completed setup"
