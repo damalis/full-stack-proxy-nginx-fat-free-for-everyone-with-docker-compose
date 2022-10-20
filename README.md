@@ -228,6 +228,12 @@ FPM uses php.ini syntax for its configuration file - php-fpm.conf, and pool conf
 add and/or remove fat-free site folders and files with any ftp client program in ```./fat-free/webapp``` folder.
 <br />You can also visit `https://example.com` to access website after starting the containers.
 
+#### Proxy
+
+Proxying is typically used to distribute the load among several servers, seamlessly show content from different websites, or pass requests for processing to application servers over protocols other than HTTP.
+
+[https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/)
+
 #### Webserver
 
 add or remove code in the ```./webserver/extra/httpd-vhosts.conf``` file for custom apache2/httpd configurations
