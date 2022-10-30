@@ -38,6 +38,13 @@ Create rules to open ports to the internet, or to a specific IPv4 address or ran
 - [Manual Configuration and Installation](#manual)
 - [Portainer Installation](#portainer)
 - [Usage](#usage)
+	- [Website](#website)
+	- [Proxy](#proxy)
+	- [Webserver](#webserver)
+	- [Database](#database)
+	- [Redis](#redis)
+	- [phpMyAdmin](#phpmyadmin)
+	- [backup](#backup)					  
 
 ## Automatic
 
@@ -197,7 +204,7 @@ You can now use the `up` command:
 docker-compose up -d
 ```
 
-#### Docker run reference
+### Docker run reference
 
 [https://docs.docker.com/engine/reference/run/](https://docs.docker.com/engine/reference/run/)
 
@@ -209,7 +216,7 @@ You should see the "Hello, world!" page in your browser. If not, please check if
 https://example.com
 ```
 
-add or remove code in the ```./php-fpm/php/conf.d/security.ini``` file for custom php.ini configurations
+add or remove code in the ./php-fpm/php/conf.d/security.ini file for custom php.ini configurations
 
 [https://www.php.net/manual/en/configuration.file.php](https://www.php.net/manual/en/configuration.file.php)
 
@@ -217,13 +224,13 @@ add or remove code in the ```./php-fpm/php-fpm.d/z-www.conf``` file for php-fpm 
 
 Or you should make changes custom host configurations then must restart service
 
-```
-docker container restart fat-free
-```
-
 FPM uses php.ini syntax for its configuration file - php-fpm.conf, and pool configuration files.
 
 [https://www.php.net/manual/en/install.fpm.configuration.php](https://www.php.net/manual/en/install.fpm.configuration.php)
+
+```
+docker container restart fat-free
+```
 
 add and/or remove fat-free site folders and files with any ftp client program in ```./fat-free/webapp``` folder.
 <br />You can also visit `https://example.com` to access website after starting the containers.
@@ -238,7 +245,7 @@ Proxying is typically used to distribute the load among several servers, seamles
 
 add or remove code in the ```./webserver/extra/httpd-vhosts.conf``` file for custom apache2/httpd configurations
 
-[https://httpd.apache.org/docs/2.4/en/configuring.html](https://httpd.apache.org/docs/2.4/en/configuring.html)
+[https://httpd.apache.org/docs/2.4/](https://httpd.apache.org/docs/2.4/)
 
 #### Database
 
