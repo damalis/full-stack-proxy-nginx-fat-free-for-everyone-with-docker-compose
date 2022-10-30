@@ -276,6 +276,8 @@ Redis host port = 6379
 
 Caching static Web pages - so the code in some route handlers can be skipped and templates don't have to be reprocessed - is one way of reducing your Web server's work load so it can focus on other tasks.
 
+[https://fatfreeframework.com/3.8/optimization](https://fatfreeframework.com/3.8/optimization)
+
 ### phpMyAdmin
 
 You can add your own custom config.inc.php settings (such as Configuration Storage setup) by creating a file named config.user.inc.php with the various user defined settings in it, and then linking it into the container using:
