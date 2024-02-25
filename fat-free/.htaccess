@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteRule ^$ /webapp/public/ [L]
 
 	RewriteRule ^(app|dict|ns|tmp)\/|\.ini$ - [R=404]
 
